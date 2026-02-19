@@ -19,6 +19,9 @@ module.exports = merge(common, {
       directory: path.join(process.cwd(), "./dist"),
       watch: true
     },
+    devMiddleware: {
+      writeToDisk: true
+    },
     open: true,
     historyApiFallback: {
       rewrites: [{from: /./, to: "404.html"}]
