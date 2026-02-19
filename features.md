@@ -38,4 +38,6 @@ $ yarn lint
 ```
 
 ## features 
--add build time in page 
+- ✅ Add build time in page (COMPLETED)
+  - Build timestamp and commit hash now displayed in footer
+  - See BUILD_INFO_FEATURE.md for details

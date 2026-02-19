@@ -49,11 +49,8 @@
 	{{ with .Site.Data.buildInfo }}
 	<div class="mw7 center pt3 tc">
 		<div class="f7 gray">
-			Build: {{ dateFormat "2006-01-02 15:04 MST" .buildTime }} |
-			Commit: <a href="https://github.com/decaporg/one-click-hugo-cms/commit/{{ .commitHash }}"
-			           target="_blank"
-			           class="link gray dim"
-			           title="View commit on GitHub">{{ .commitShort }}</a>
+			Build: {{ dateFormat "2006-01-02 15:04 MST" .buildTime }}{{ if ne .commitShort "unknown" }} |
+			Commit: <span title="View commit: {{ .commitHash }}">{{ .commitShort }}</span>{{ end }}
 		</div>
 	</div>
 	{{ end }}

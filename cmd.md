@@ -10,10 +10,17 @@ export NVM_DIR="$HOME/.nvm"
 
 
 nvm list
+nvm ls-remote --lts
 nvm install --lts
 nvm use node 
 
- 
+node v24.13.1
+
+
+## install 
+cd /Users/lge11/GithubP/hugo-cms && npm install
+
+
 
 ## Git cleanup
 
