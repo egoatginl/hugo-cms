@@ -20,6 +20,8 @@ node v24.13.1
 ## install 
 cd /Users/lge11/GithubP/hugo-cms && npm install
 
+git commit -m ""
+git push origin main
 
 
 ## Git cleanup
